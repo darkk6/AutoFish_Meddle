@@ -1,0 +1,8 @@
+- v1.1
+	Followed update with ClientEvenAPI
+
+- v1.0.1
+	Update due to ClientEvenAPI bug fix
+
+- v1.0
+	First release
