@@ -165,7 +165,7 @@ public class EventHandler implements ITickListener,ISoundListener,IKeyBindingSta
 	private Object getPlayerFishEntity(EntityPlayer player){
 		try{
 			Class cls=EntityPlayer.class;
-			Field fishEntity=cls.getField("bP");//fishEntity
+			Field fishEntity=cls.getField("bQ");//fishEntity
 			Object result=fishEntity.get(player);
 			return result;
 		}catch(Exception e){

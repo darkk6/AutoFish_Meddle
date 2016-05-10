@@ -14,7 +14,7 @@ public class AutoFishMod {
 	public static CommonProxy proxy = (CommonProxy) MeddleAPI.createProxyInstance(CommonProxy.class.getName(), ClientProxy.class.getName());
 	
 	public void init(){
-		ClientEventAPI.checkApiVersionWithException("1.1");
+		ClientEventAPI.checkApiVersionWithException("1.3");
 		proxy.init();
 	}
 }

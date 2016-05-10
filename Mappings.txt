@@ -5,22 +5,22 @@ EventHandler
 	onsetKeyBindState
 		keybinding.h() => keybinding.getDescription()
 
-	onTickEnd
-		thisWorld.P() => theWorld.getTotalWorldTime() [ in World class , this.x => WorldInfo.e() this.k ]
-
 	onTickEnd , onSoundPlay
 		mc.T() => isGamePaused() [in Minecraft , return this.ah]
+		
+	onTickEnd
+		thisWorld.P() => theWorld.getTotalWorldTime() [ in World class , this.x => WorldInfo.e() this.k ]
 		
 	switchFishingRod
 		inventory.a[] => inventory.mainInventory[] (InventoryPlayer , size 為 36 的 array)
 		inventory.d => inventory.currentItem ( InventoryPlayer int 型態的 field )
 		
 	getPlayerFishEntity
-		cls.getField("bP"); => bP : fishEntity [ in class EntityPlayer ]
+		cls.getField("bQ"); => bQ : fishEntity [ in class EntityPlayer ]
 		
 	entityGetDistance
 		getMethod("f",DDD); => f : getDistance(DDD)D [ in class Entity ]
-	
+		
 Items
 	isFishingRod
 		res.a() => getResourcePath() [ in class ResourceLocation ]
