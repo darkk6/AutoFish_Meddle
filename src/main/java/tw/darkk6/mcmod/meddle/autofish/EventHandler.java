@@ -19,6 +19,7 @@ import tw.darkk6.mcmod.meddle.autofish.util.Reference;
 import tw.darkk6.meddle.api.event.SoundEvent;
 import tw.darkk6.meddle.api.listener.ISoundListener;
 import tw.darkk6.meddle.api.listener.ITickListener;
+import tw.darkk6.meddle.api.srg.SrgMap;
 import tw.darkk6.meddle.api.util.APILog;
 import tw.darkk6.meddle.api.util.APIUtil;
 
@@ -165,7 +166,7 @@ public class EventHandler implements ITickListener,ISoundListener,IKeyBindingSta
 	private Object getPlayerFishEntity(EntityPlayer player){
 		try{
 			Class cls=EntityPlayer.class;
-			Field fishEntity=cls.getField("bQ");//fishEntity
+			Field fishEntity=cls.getField(SrgMap.getFieldName(NameMap.fFishEntity));
 			Object result=fishEntity.get(player);
 			return result;
 		}catch(Exception e){
@@ -178,8 +179,8 @@ public class EventHandler implements ITickListener,ISoundListener,IKeyBindingSta
 	private double entityGetDistance(Object entity,double x,double y,double z){
 		try{
 			Class cls=Entity.class;
-			// getDistance(DDD)D
-			Method getDistence=cls.getMethod("f",double.class,double.class,double.class);
+			Method getDistence=cls.getMethod(SrgMap.getMethodName(NameMap.mGetDistance),
+					double.class,double.class,double.class);
 			double result=(double)getDistence.invoke(entity,x,y,z);
 			return result;
 		}catch(Exception e){

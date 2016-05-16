@@ -1,0 +1,5 @@
+# srgName owner name descriptor
+MD: f net/minecraft/entity/Entity getDistance (DDD)D
+
+# srgName owner name type
+FD: bQ net/minecraft/entity/player/EntityPlayer fishEntity Lnet/minecraft/entity/projectile/EntityFishHook;

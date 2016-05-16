@@ -1,5 +1,13 @@
+AutoFish 1.2 require :
+	Meddle mod loader 1.3
+	Meddle API 1.0.6
+	dynamicMappings build 024
+	ClientEventAPI 1.3
+
 - v1.2
 	Update to Minecraft 1.9.4
+	Update dependence : ClientEventAPI 1.3
+	Add srg name map
 
 - v1.1
 	Followed update with ClientEvenAPI

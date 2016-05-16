@@ -14,13 +14,17 @@ EventHandler
 	switchFishingRod
 		inventory.a[] => inventory.mainInventory[] (InventoryPlayer , size 為 36 的 array)
 		inventory.d => inventory.currentItem ( InventoryPlayer int 型態的 field )
+
+Items
+	isFishingRod
+		res.a() => getResourcePath() [ in class ResourceLocation ]
+
+=============== 底下已移到 SrgMap 中 ===============
 		
+EventHandler
+
 	getPlayerFishEntity
 		cls.getField("bQ"); => bQ : fishEntity [ in class EntityPlayer ]
 		
 	entityGetDistance
 		getMethod("f",DDD); => f : getDistance(DDD)D [ in class Entity ]
-		
-Items
-	isFishingRod
-		res.a() => getResourcePath() [ in class ResourceLocation ]
